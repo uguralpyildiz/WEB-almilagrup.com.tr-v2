@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Calibri', sans-serif !important;
+    
 }
 
 @font-face {
@@ -29,7 +29,7 @@ nav {
     z-index: 999;
     width: 100%;
     padding: 15px;
-    background: #000;
+    
     min-width: 1200px;
 }
 
@@ -94,7 +94,17 @@ nav {
     background: linear-gradient(to bottom, #000000e4 0%, #00000022);
 
 }
+.nav-logo {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
 
+.nav-logo img {
+    width: 250px;
+}
 .mySwiper {
     box-shadow: 0 0 100px #000;
 }
@@ -143,7 +153,7 @@ nav {
     flex-direction: column;
     padding: 25px 0;
     box-shadow: 0 0 100px #000;
-    background-image: url("img/bgef.png");
+    background-image: url("https://gcdn.bionluk.com/uploads/message/21a94c4b-2b44-4bf7-8961-41c2089ba51c.jpg");
     background-position: 80%;
     background-repeat: no-repeat;
     z-index: 3;
@@ -157,7 +167,7 @@ nav {
     height: 100%;
    
     width: 100%;
-    background-image: url("img/bgef.png");
+    background-image: url("https://gcdn.bionluk.com/uploads/message/21a94c4b-2b44-4bf7-8961-41c2089ba51c.jpg");
     background-position: 53%;
     background-repeat: no-repeat;
     opacity: 0.1;
@@ -165,7 +175,7 @@ nav {
 }
 
 .about-header {
-    color: #E1C193;
+    color: #f32d37;
     font-size: 22px;
     padding: 15px 0;
 }
@@ -185,7 +195,7 @@ nav {
     width: 100%;
     text-align: center;
     font-size: 22px;
-    color: #E1C193;
+    color: #f32d37;
     background: #1A1A1A;
     z-index: 2;
 
@@ -230,7 +240,7 @@ nav {
     position: absolute;
     top: 20px;
     left: -30px;
-    border: 5px solid #E5C496;
+    border: 5px solid #f32d37;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -242,26 +252,32 @@ nav {
     position: relative;
     top: 0px;
     margin-left: 22px;
+   
 }
 
 .project-slider-container {
     display: flex !important;
     justify-content: start !important;
     align-items: start !important;
-    height: 520px;
+    
 }
 
 .slider-p {
     display: flex !important;
-    align-items: start !important;
+    align-items: center !important;
+    flex-direction: column !important;
     justify-content: center;
+    gap: 50px;
     background: #1A1A1A;
     box-shadow: 0px 0px 0px transparent !important;
 }
-
+.items{
+    padding-bottom: 50px;
+}
 .items-header {
     font-size: 48px;
     text-align: left;
+    
 }
 
 .list-header {
@@ -304,7 +320,7 @@ li{
 
 :root {
     --swiper-navigation-size: 25px !important;
-    --swiper-pagination-color: #E1C193;
+    --swiper-pagination-color: #f32d37;
     --swiper-pagination-bullet-size: 8px;
     --swiper-pagination-bullet-width: 8px;
     --swiper-pagination-bullet-height: 8px;
@@ -368,7 +384,7 @@ li{
 }
 
 .box:hover {
-    box-shadow: 0 0 35px #E1C193;
+    box-shadow: 0 0 35px #f32d37;
 }
 
 .box img {
@@ -376,7 +392,7 @@ li{
 }
 
 footer {
-    border-top: 5px solid #E1C193;
+    border-top: 5px solid #f32d37;
     padding: 40px;
 }
 
@@ -455,7 +471,7 @@ footer {
 
 .about-div-head{
     font-size: 26px;
-    color: #E1C193;
+    color: #f32d37;
     padding: 10px 0;
 }
 .map{
@@ -470,10 +486,14 @@ footer {
 }
 .about-div {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    max-width: 1000px;
+    justify-content: start;
     height: 450px;
-    margin: 70px;
+    margin: 70px auto;
+    flex-direction: column;
+    width: 100%;
 }
 
 .bg-eff:nth-child(even){
@@ -494,21 +514,36 @@ footer {
     text-align: left;
     width: 400px;
 }
+.about-div-alt{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 1000px;
+    justify-content: space-between;
+}
 .about-div-alt a{
     text-decoration: none;
     color: #fff;
+    width: 33.3%;
+    border: 2px solid #f32d37;
+    
+    padding: 20px;
+    text-align: center;
     transition: .3s ease;
+}
+.about-div-alt a i{
+    font-size: 22px;
 }
 .about-div-alt a:hover{
     text-decoration: underline;
-    color: #E1C193;
+    color: #f32d37;
 }
 .about-img-container::before {
     content: "";
     position: absolute;
     top: 20px;
     left: 30px;
-    border: 5px solid #E5C496;
+    border: 5px solid #f32d37;
     width: 100%;
     height: 95%;
     z-index: -1;
@@ -523,7 +558,7 @@ footer {
     position: absolute;
     top: 20px;
     left: -30px;
-    border: 5px solid #E5C496;
+    border: 5px solid #f32d37;
     width: 100%;
     height: 95%;
     z-index: -1;
