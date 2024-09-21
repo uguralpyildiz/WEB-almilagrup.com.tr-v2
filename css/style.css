@@ -9347,13 +9347,26 @@ textarea {
         color: #fff;
         
         border-radius: 30px;
-        font-size: 18px;
-        background: #EE1D23;
+        font-size: 16px;
+        background: #000;
         border: 2px solid #EE1D23; }
+        .bold-te{
+          font-weight: 800;
+        }
+        .flexsa{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+        }
+        .widget{
+          margin-bottom: 10px !important;
+        }
         .site-nav .site-navigation .site-menu > li.cta-button a:hover {
           color: #fff;
-          background: transparent;
-          border: 2px solid rgba(255, 255, 255, 0.2); }
+          background: red;
+          border: 2px solid red; }
       .site-nav .site-navigation .site-menu > li.active > a {
         color: #fff; }
     .site-nav .site-navigation .site-menu .has-children {
